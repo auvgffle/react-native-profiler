@@ -83,7 +83,7 @@ npx react-native run-android
 
 
 ### Note: If you are using 0.75 and above new Architecture 
-### In bui       set => newArchEnabled=false
+### In android > gradle.properties set => newArchEnabled=false
 
 ### 5. Usage in Your App
 
