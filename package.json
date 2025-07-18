@@ -1,32 +1,30 @@
 {
-  "name": "my-device-sdk",
+  "name": "react-native-profiler",
   "version": "1.0.0",
-  "description": "A React Native SDK to collect and send device information securely.",
   "main": "index.js",
+  "description": "A professional React Native SDK for device, network, and location profiling.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/auvgffle/react-native-profiler.git"
+  },
+  "author": "WRLY SH",
+  "license": "MIT",
   "keywords": [
     "react-native",
     "sdk",
-    "device-info",
-    "analytics",
-    "mobile",
-    "permissions",
-    "aaid",
-    "netinfo"
+    "profiler",
+    "device",
+    "location",
+    "network",
+    "analytics"
   ],
-  "author": "Sana Ullah Khan",
-  "license": "MIT",
-  "postinstall": "node postinstall.js",
-  "scripts": {
-    "setup": "node setup-host.js",
-    "test": "node test-sdk.js"
-  },
   "peerDependencies": {
-    "react": ">=16.8",
-    "react-native": ">=0.60",
-    "@react-native-community/netinfo": "^11.4.1",
-    "react-native-device-info": "^10.14.0"
+    "react-native": ">=0.60.0",
+    "react-native-device-info": "*",
+    "@react-native-community/netinfo": "*"
   },
-  "dependencies": {
-    "base-64": "^1.0.0"
+  "homepage": "https://github.com/auvgffle/react-native-profiler#readme",
+  "bugs": {
+    "url": "https://github.com/auvgffle/react-native-profiler/issues"
   }
 }
