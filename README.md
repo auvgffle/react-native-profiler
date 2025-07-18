@@ -204,7 +204,7 @@ MIT
 
 ## 🤝 Support
 
-For issues, questions, or feature requests, please [open an issue](https://github.com/yourusername/react-native-profiler/issues) or contact the maintainer.
+For issues, questions, or feature requests, please [open an issue](https://github.com/auvgffle/react-native-profiler/issues) or contact the maintainer.
 
 ---
 
