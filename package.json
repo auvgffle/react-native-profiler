@@ -1,5 +1,5 @@
 {
-  "name": "react-native-profiler",
+  "name": "react-native-profiler-sdk",
   "version": "1.0.0",
   "main": "index.js",
   "description": "A professional React Native SDK for device, network, and location profiling.",

@@ -1,6 +1,7 @@
-# react-native-profiler
+# react-native-profiler-sdk
 
-A professional React Native SDK for profiling device, network, and location data. Easy to integrate, extensible, and production-ready.
+A professional React Native SDK for profiling device, network, and location data.  
+Easy to integrate, extensible, and production-ready.
 
 ---
 
@@ -17,9 +18,9 @@ A professional React Native SDK for profiling device, network, and location data
 ## 🚀 Installation
 
 ```sh
-npm install react-native-profiler
+npm install react-native-profiler-sdk
 # or
-yarn add react-native-profiler
+yarn add react-native-profiler-sdk
 ```
 
 > **Note:** For React Native < 0.60, you may need to link native modules manually.
@@ -29,11 +30,13 @@ yarn add react-native-profiler
 ## 📋 Requirements & Permissions
 
 ### React Native Requirements
-- **React Native**: `>=0.60.0` (autolinking supported)
-- **Android**: API Level 21+
-- **iOS**: iOS 10.0+
+
+- **React Native:** `>=0.60.0` (autolinking supported)
+- **Android:** API Level 21+
+- **iOS:** iOS 10.0+
 
 ### Peer Dependencies
+
 - `react-native-device-info`
 - `@react-native-community/netinfo`
 
@@ -44,6 +47,7 @@ npm install react-native-device-info @react-native-community/netinfo
 ```
 
 ### Android Permissions
+
 Add the following to your `android/app/src/main/AndroidManifest.xml`:
 
 ```xml
@@ -58,12 +62,13 @@ Add the following to your `android/app/src/main/AndroidManifest.xml`:
 #### ⚠️ Note for React Native 0.75+
 If you are using React Native 0.75 and above with the new architecture, you may need to disable it for compatibility:
 
-- In `android/gradle.properties` set:
-  ```
-  newArchEnabled=false
-  ```
+In `android/gradle.properties` set:
+```
+newArchEnabled=false
+```
 
 ### iOS Permissions
+
 Add the following keys to your `ios/YourApp/Info.plist`:
 
 ```xml
@@ -87,7 +92,7 @@ Add the following keys to your `ios/YourApp/Info.plist`:
 ### 1. Import the SDK
 
 ```js
-import Profiler from 'react-native-profiler';
+import Profiler from 'react-native-profiler-sdk';
 ```
 
 ### 2. Initialize the SDK
@@ -125,22 +130,13 @@ Profiler.stopSendingData();
 
 ## 📦 API
 
-### `init(appId, contactObject, intervalMs?)`
-- `appId` (string): Your application ID (required)
-- `contactObject` (object): Any user info (email, phone, name, etc.) (optional)
-- `intervalMs` (number): How often to send data in ms (default: 60000)
-
-### `sendData(extraPayload?)`
-- Sends device/network/location data to backend, with any extra fields.
-
-### `stopSendingData()`
-- Stops the automatic data sending interval.
-
-### `healthCheck()`
-- Returns SDK status and cache info.
-
-### `testNativeModule()`
-- Tests native module integration (for debugging).
+| Method | Description |
+|--------|-------------|
+| `init(appId, contactObject, intervalMs?)` | Initialize the SDK. |
+| `sendData(extraPayload?)` | Send device/network/location data to backend, with any extra fields. |
+| `stopSendingData()` | Stops the automatic data sending interval. |
+| `healthCheck()` | Returns SDK status and cache info. |
+| `testNativeModule()` | Tests native module integration (for debugging). |
 
 ---
 
@@ -157,7 +153,7 @@ Profiler.stopSendingData();
 ## 📝 Example
 
 ```js
-import Profiler from 'react-native-profiler';
+import Profiler from 'react-native-profiler-sdk';
 
 Profiler.init('MY_APP_ID', {
   email: 'me@domain.com',
@@ -204,7 +200,7 @@ MIT
 
 ## 🤝 Support
 
-For issues, questions, or feature requests, please [open an issue](https://github.com/auvgffle/react-native-profiler/issues) or contact the maintainer.
+- For issues, questions, or feature requests, please [open an issue](https://github.com/auvgffle/react-native-profiler/issues) or contact the maintainer.
 
 ---
 
