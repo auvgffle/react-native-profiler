@@ -1,0 +1,30 @@
+{
+  "name": "react-native-profiler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "A professional React Native SDK for device, network, and location profiling.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/auvgffle/react-native-profiler.git"
+  },
+  "author": "WRLY SH",
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "sdk",
+    "profiler",
+    "device",
+    "location",
+    "network",
+    "analytics"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.60.0",
+    "react-native-device-info": "*",
+    "@react-native-community/netinfo": "*"
+  },
+  "homepage": "https://github.com/auvgffle/react-native-profiler#readme",
+  "bugs": {
+    "url": "https://github.com/auvgffle/react-native-profiler/issues"
+  }
+}

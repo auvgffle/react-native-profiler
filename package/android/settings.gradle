@@ -1,0 +1,7 @@
+rootProject.name = 'YourAppName'
+
+include ':app'
+
+// Include the native module from node_modules
+include ':my-device-sdk'
+project(':my-device-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/my-device-sdk/android')
